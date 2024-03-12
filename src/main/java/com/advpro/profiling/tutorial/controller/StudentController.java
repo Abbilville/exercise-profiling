@@ -2,7 +2,6 @@ package com.advpro.profiling.tutorial.controller;
 
 import com.advpro.profiling.tutorial.model.Student;
 import com.advpro.profiling.tutorial.model.StudentCourse;
-import com.advpro.profiling.tutorial.service.DataSeedService;
 import com.advpro.profiling.tutorial.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +29,7 @@ public class StudentController {
     @GetMapping("/highest-gpa")
     public ResponseEntity<String> highestGpa() {
         Optional<Student> studentWithHighestGpa = studentService.findStudentWithHighestGpa();
-        return ResponseEntity.ok(studentWithHighestGpa.get().toString());
+        return ResponseEntity.ok(studentWithHighestGpa.toString());
     }
     @GetMapping("/all-student-name")
     public ResponseEntity<String> allStudentName() {
