@@ -25,6 +25,8 @@
    ![image](https://github.com/Abbilville/exercise-profiling/assets/119837732/aaf85834-c4d6-4587-9bf7-fe1189731abe)
    ![image](https://github.com/Abbilville/exercise-profiling/assets/119837732/bd5ff4ef-3472-4409-a9dc-05d977f1499c)
 
+Dapat dilihat bahwa sesudah method method yang berhubungan dengan endpoint tersebut dioptimisasi, sample time dan latencynya sangat berkurang drastis. Misalnya saja pada path /all-student sample time dan latency nya mencapai 400k, namun setelah dioptimisasi sample timenya dan latencynya berkurang menjadi 26k saja, yang mana lebih cepat 93,5 persen.
+
 ### Refleksi
 1. **What is the difference between the approach of performance testing with JMeter and profiling with IntelliJ Profiler in the context of optimizing application performance?** <br>
     JMeter berfokus pada pengukuran performa aplikasi dengan mensimulasikan beban kerja tinggi pada sistem (misalnya, menguji seberapa baik aplikasi menangani banyak pengguna secara bersamaan), sementara IntelliJ Profiler difokuskan pada identifikasi titik-titik lemah yang memengaruhi performa aplikasi secara spesifik.
